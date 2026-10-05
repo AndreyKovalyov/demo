@@ -1,0 +1,36 @@
+{
+  "name": "@sigma/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "typecheck": "vue-tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@sigma/domain": "workspace:*",
+    "@sigma/ui-kit": "workspace:*",
+    "@vuelidate/core": "2.0.3",
+    "@vuelidate/validators": "2.0.4",
+    "dayjs": "1.11.23",
+    "msw": "2.12.10",
+    "pinia": "3.0.4",
+    "vue": "3.5.43",
+    "vue-i18n": "11.4.13",
+    "vue-router": "4.6.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "6.0.9",
+    "sass": "1.97.3",
+    "typescript": "5.9.3",
+    "vite": "8.3.2",
+    "vue-tsc": "3.2.5"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  }
+}

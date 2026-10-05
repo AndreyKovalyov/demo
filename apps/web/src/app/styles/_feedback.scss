@@ -1,0 +1,31 @@
+.request-error {
+  padding: 32px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-danger);
+}
+.notice {
+  padding: 16px 20px;
+  color: var(--color-muted);
+  border-top: 1px solid var(--color-border);
+}
+.error-message {
+  color: var(--color-danger);
+  font-size: 0.8125rem;
+}
+.success-message {
+  color: var(--color-success);
+  margin-bottom: 16px;
+  font-size: 0.8125rem;
+}
+.empty-panel {
+  padding: 60px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}

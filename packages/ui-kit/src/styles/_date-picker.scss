@@ -1,0 +1,23 @@
+.ui-date-picker {
+  &__control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    text-align: left;
+    font-variant-numeric: tabular-nums;
+
+    &--empty {
+      color: var(--color-muted);
+    }
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    color: var(--color-muted);
+  }
+
+  &__popup {
+    padding: 0;
+  }
+}

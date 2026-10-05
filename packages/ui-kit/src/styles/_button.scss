@@ -1,0 +1,63 @@
+.ui-button {
+  position: relative;
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  font-weight: 500;
+  white-space: nowrap;
+  transition:
+    background 0.15s,
+    border-color 0.15s;
+
+  &__label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    &--loading {
+      opacity: 0;
+    }
+  }
+
+  > .ui-spinner {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+  }
+
+  &:active:not(:disabled) {
+    filter: brightness(0.95);
+  }
+  &--primary {
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+    &:hover:not(:disabled) {
+      background: var(--color-primary-hover);
+    }
+  }
+  &--secondary {
+    background: var(--color-surface);
+    color: var(--color-text);
+    border-color: var(--color-border);
+    &:hover:not(:disabled) {
+      background: var(--color-surface-hover);
+    }
+  }
+  &--ghost {
+    color: var(--color-muted);
+    background: transparent;
+    &:hover:not(:disabled) {
+      color: var(--color-text);
+      background: var(--color-surface-hover);
+    }
+  }
+  &--danger {
+    background: var(--color-danger-soft);
+    color: var(--color-danger);
+  }
+}

@@ -1,0 +1,22 @@
+.employee-summary {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  &__name {
+    font-weight: 500;
+    font-size: 0.8125rem;
+  }
+}
+
+.employee-link {
+  color: var(--color-text);
+  &:hover {
+    text-decoration: none;
+  }
+  &:hover .employee-summary__name {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}

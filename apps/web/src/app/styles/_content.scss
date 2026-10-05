@@ -1,0 +1,14 @@
+.page-heading {
+  margin-bottom: 28px;
+  p {
+    margin-top: 8px;
+    font-size: 0.8125rem;
+  }
+}
+
+.inline-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}

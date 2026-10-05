@@ -1,0 +1,52 @@
+.profile-panel {
+  padding: 28px;
+  max-width: 880px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid var(--color-border);
+
+  &__action {
+    margin-left: auto;
+  }
+}
+
+.profile-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin: 0;
+
+  dt {
+    color: var(--color-muted);
+    font-size: 0.75rem;
+    margin-bottom: 6px;
+  }
+  dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+}
+
+.team-panel {
+  padding: 24px 28px;
+  margin-top: 22px;
+  max-width: 880px;
+}
+.team-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin-top: 22px;
+  max-height: min(42dvh, 380px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  scrollbar-color: var(--color-border) var(--color-surface);
+  padding: 4px 8px 4px 0;
+}

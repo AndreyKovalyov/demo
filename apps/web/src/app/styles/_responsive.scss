@@ -1,0 +1,126 @@
+@media (max-width: 900px) {
+  .app-shell {
+    grid-template-columns: 176px minmax(0, 1fr);
+  }
+  .sidebar {
+    width: 176px;
+    padding-inline: 10px;
+  }
+  .brand {
+    font-size: 1rem;
+    padding-inline: 8px;
+  }
+  .sidebar-nav__link {
+    padding-inline: 10px;
+  }
+  .main-content {
+    padding: 28px 18px;
+  }
+  .topbar {
+    padding-inline: 18px;
+    &__title,
+    &__user-name {
+      display: none;
+    }
+    &__controls {
+      margin-left: auto;
+    }
+  }
+  .profile-header {
+    flex-wrap: wrap;
+  }
+  .team-list {
+    grid-template-columns: 1fr;
+  }
+  .department-card {
+    grid-template-columns: 1fr;
+    &__manager {
+      grid-column: 1;
+      grid-row: auto;
+      margin-top: 16px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+
+    &--guest {
+      height: auto;
+    }
+  }
+  .app-body {
+    flex: 1;
+    height: auto;
+  }
+  .sidebar {
+    flex-shrink: 0;
+    position: static;
+    width: 100%;
+    padding: 20px 16px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .sidebar-nav {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 2px;
+    margin-top: 18px;
+    &__link {
+      flex-shrink: 0;
+      font-size: 0.75rem;
+      padding: 11px 10px;
+      border-radius: 4px 4px 0 0;
+      gap: 7px;
+    }
+    svg {
+      width: 15px;
+    }
+  }
+  .topbar {
+    min-height: 62px;
+    padding: 12px 16px;
+    &__controls {
+      gap: 5px;
+    }
+    &__user {
+      margin-left: 4px;
+    }
+    &__user .ui-avatar {
+      width: 28px;
+      height: 28px;
+      font-size: 0.625rem;
+    }
+  }
+  .main-content {
+    padding: 28px 14px;
+  }
+  .vacation-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .review-actions {
+    min-width: 0;
+  }
+  .profile-panel {
+    padding: 22px;
+  }
+  .profile-details,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .profile-header__action {
+    margin-left: 0;
+  }
+  .login-card {
+    padding: 26px;
+  }
+  .ui-input,
+  .ui-button {
+    min-height: 42px;
+  }
+}

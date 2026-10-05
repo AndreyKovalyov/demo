@@ -1,0 +1,15 @@
+.text {
+  &--muted {
+    color: var(--color-muted);
+  }
+  &--small {
+    font-size: 0.75rem;
+  }
+}
+
+.panel {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  overflow: hidden;
+}

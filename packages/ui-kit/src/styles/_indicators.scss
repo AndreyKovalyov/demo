@@ -1,0 +1,70 @@
+.ui-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  color: var(--color-muted);
+
+  &::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+  &--success {
+    color: var(--color-success);
+  }
+  &--warning {
+    color: var(--color-warning);
+  }
+  &--danger {
+    color: var(--color-danger);
+  }
+  &--info {
+    color: var(--color-primary);
+  }
+}
+
+.ui-avatar {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-muted);
+  background: var(--color-surface-hover);
+  border: 1px solid var(--color-border);
+
+  &--large {
+    width: 54px;
+    height: 54px;
+    font-size: 1.125rem;
+  }
+  &--green {
+    color: var(--color-success);
+    background: var(--color-success-soft);
+  }
+  &--purple {
+    color: var(--color-purple);
+    background: var(--color-purple-soft);
+  }
+  &--orange {
+    color: var(--color-orange);
+    background: var(--color-orange-soft);
+  }
+}
+
+.ui-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: ui-spin 0.8s linear infinite;
+}

@@ -1,0 +1,27 @@
+.ui-popover {
+  position: fixed;
+  inset: auto;
+  margin: 0;
+  padding: 4px;
+  max-width: calc(100vw - 16px);
+  max-height: calc(100dvh - 16px);
+  overflow: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  background: var(--color-surface);
+  scrollbar-color: var(--color-border) var(--color-surface);
+  overscroll-behavior: contain;
+}
+
+.ui-chevron {
+  flex-shrink: 0;
+
+  &--left {
+    rotate: 90deg;
+  }
+
+  &--right {
+    rotate: -90deg;
+  }
+}

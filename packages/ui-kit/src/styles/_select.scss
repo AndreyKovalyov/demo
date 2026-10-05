@@ -1,0 +1,54 @@
+.ui-select {
+  &__control {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-right: 40px;
+
+    &--empty {
+      color: var(--color-muted);
+    }
+  }
+
+  &__value {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    color: var(--color-muted);
+    pointer-events: none;
+  }
+
+  &__options {
+    max-height: 280px;
+  }
+
+  &__option {
+    display: block;
+    width: 100%;
+    min-height: 36px;
+    padding: 8px 10px;
+    border: 0;
+    border-radius: var(--radius-sm);
+    color: var(--color-text);
+    background: transparent;
+    text-align: left;
+
+    &:hover:not(:disabled),
+    &--active {
+      background: var(--color-surface-hover);
+    }
+
+    &[aria-selected='true'] {
+      color: var(--color-primary);
+      background: var(--color-primary-soft);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.guest-content {
+  min-height: calc(100vh - 72px);
+  display: grid;
+  place-items: center;
+  padding: 40px 20px;
+}
+.login-page {
+  width: min(100%, 420px);
+}
+.login-card {
+  padding: 32px;
+  &__hint {
+    margin: 10px 0 30px;
+    font-size: 0.8125rem;
+  }
+}
+.demo-accounts {
+  padding-top: 24px;
+  margin-top: 28px;
+  border-top: 1px solid var(--color-border);
+  .inline-actions {
+    margin: 12px 0;
+  }
+  .ui-button {
+    font-size: 0.8125rem;
+    padding: 7px 12px;
+  }
+}
+.login-note {
+  text-align: center;
+  margin-top: 22px;
+}

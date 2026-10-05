@@ -1,0 +1,39 @@
+.ui-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+
+  label {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  &__error {
+    font-size: 0.75rem;
+    color: var(--color-danger);
+  }
+}
+
+.ui-input {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text);
+  padding: 9px 12px;
+
+  &:hover:not(:disabled) {
+    border-color: var(--color-muted);
+  }
+  &::placeholder {
+    color: var(--color-muted);
+  }
+  &[aria-invalid='true'] {
+    border-color: var(--color-danger);
+  }
+  &:disabled {
+    color: var(--color-muted);
+    background: var(--color-surface-hover);
+  }
+}
